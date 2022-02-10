@@ -17,7 +17,7 @@ public class Task6 {
         }
         for (Map.Entry<Character, Integer> entry: dictionary.entrySet())
             if(entry.getValue() > 1){
-                System.out.println(entry.getKey() + " повторяеться " + entry.getValue() + " раз(а)");
+                System.out.println(entry.getKey() + " повторяется " + entry.getValue() + " раз(а)");
             }
         //System.out.println(dictionary.toString());
     }
