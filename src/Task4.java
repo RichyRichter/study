@@ -2,7 +2,6 @@ public class Task4 {
     public static void showMassive(){
         int[] mass = new int[30];
         for (int i = 0; i < mass.length; i++) {
-
             mass[i] = i;
             System.out.print(mass[i] + " ");
 
