@@ -9,12 +9,12 @@ public class Task9 {
 
         for (int i = 0; i < str.length() / 2; i++)
             if (str.charAt(i) != str.charAt(str.length() - i - 1)) {
-                System.out.println("Это не полиндром");
+                System.out.println("Это не палиндром");
                 check = false;
                 break;
             }
         if(check)
-            System.out.println("Это полиндром");
+            System.out.println("Это палиндром");
     }
 }
 
