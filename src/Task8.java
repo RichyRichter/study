@@ -8,7 +8,7 @@ public class Task8 {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Напишите выражение");
-        String text = scanner.nextLine();
+        String text = "0" + scanner.nextLine();
         Pattern pattern = Pattern.compile("\\d+|[-+/*]");
         Matcher matcher = pattern.matcher(text);
         ArrayList<String> list = new ArrayList<>();
