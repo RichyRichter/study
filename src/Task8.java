@@ -4,8 +4,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Task8 {
-    public static void calculate() {
 
+    public static void calculate() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Напишите выражение");
         String text = "0" + scanner.nextLine();
@@ -22,36 +22,37 @@ public class Task8 {
     }
 
     private static void doArithmetic(ArrayList<String> list) {
-        boolean priority = checkPriority(list);
-        for (int i = 0; i < list.size(); i++) {
-            if ("/".equals(list.get(i))) {
-                int res = Integer.parseInt(list.get(i - 1)) / Integer.parseInt(list.get(i + 1));
-                list.set(i - 1, String.valueOf(res));
-                list.remove(i);
-                list.remove(i);
-            } else if ("*".equals(list.get(i))) {
-                int res = Integer.parseInt(list.get(i - 1)) * Integer.parseInt(list.get(i + 1));
-                list.set(i - 1, String.valueOf(res));
-                list.remove(i);
-                list.remove(i);
-            } else if ("+".equals(list.get(i)) && priority) {
-                int res = Integer.parseInt(list.get(i - 1)) + Integer.parseInt(list.get(i + 1));
-                list.set(i - 1, String.valueOf(res));
-                list.remove(i);
-                list.remove(i);
-            } else if ("-".equals(list.get(i)) && priority) {
-                int res = Integer.parseInt(list.get(i - 1)) - Integer.parseInt(list.get(i + 1));
-                list.set(i - 1, String.valueOf(res));
-                list.remove(i);
-                list.remove(i);
-            }
+        if (list.contains("*")) {
+            calculateAndSet(list, "*");
+            return;
+        }
+        if (list.contains("/")) {
+            calculateAndSet(list, "/");
+            return;
+        }
+        if (list.contains("-")) {
+            calculateAndSet(list, "-");
+            return;
+        }
+        if (list.contains("+")) {
+            calculateAndSet(list, "+");
         }
     }
-    private static boolean checkPriority(ArrayList<String> list) {
-        if (list.contains("*")||list.contains("/"))
-            return false;
-        else return true;
-    }
 
+    private static void calculateAndSet(ArrayList<String> list, String chr) {
+        int index = list.indexOf(chr);
+        int firstNum = Integer.parseInt(list.get(index - 1));
+        int secondNum = Integer.parseInt(list.get(index + 1));
+
+        switch (chr) {
+            case ("*") -> list.set(index - 1, String.valueOf(firstNum * secondNum));
+            case ("/") -> list.set(index - 1, String.valueOf(firstNum / secondNum));
+            case ("-") -> list.set(index - 1, String.valueOf(firstNum - secondNum));
+            case ("+") -> list.set(index - 1, String.valueOf(firstNum + secondNum));
+        }
+        list.remove(index);
+        list.remove(index);
+    }
 }
+
 
