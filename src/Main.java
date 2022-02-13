@@ -21,5 +21,7 @@ public class Main {
 
         //Task9.checkPalindrome();
 
+        System.out.println(Bonus.checkBoolean(true, false, true, false));
+
     }
 }
