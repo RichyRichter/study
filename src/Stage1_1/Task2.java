@@ -1,3 +1,5 @@
+package Stage1_1;
+
 public class Task2 {
     public static void calculate(){
         int firstInt = 114;

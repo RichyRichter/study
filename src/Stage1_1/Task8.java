@@ -1,3 +1,5 @@
+package Stage1_1;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;

@@ -1,3 +1,5 @@
+package Stage1_1;
+
 import java.util.HashMap;
 import java.util.Map;
 

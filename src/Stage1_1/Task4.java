@@ -1,3 +1,5 @@
+package Stage1_1;
+
 public class Task4 {
     public static void showMassive(){
         int[] mass = new int[30];

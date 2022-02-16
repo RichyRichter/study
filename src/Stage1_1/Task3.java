@@ -1,3 +1,5 @@
+package Stage1_1;
+
 public class Task3 {
     public static void showLogical(){
         boolean a = true;

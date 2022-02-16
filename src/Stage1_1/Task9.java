@@ -1,3 +1,5 @@
+package Stage1_1;
+
 import java.util.Scanner;
 
 public class Task9 {

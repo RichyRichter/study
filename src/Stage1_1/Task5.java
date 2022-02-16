@@ -1,3 +1,5 @@
+package Stage1_1;
+
 public class Task5 {
     public static void showNumberOfChar(){
         String str = "Hello World!";

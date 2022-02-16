@@ -1,3 +1,5 @@
+package Stage1_1;
+
 public class Task7 {
     public static void countBottles() {
         for (int i = 100; i > 0; i--) {
