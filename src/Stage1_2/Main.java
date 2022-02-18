@@ -22,11 +22,12 @@ public class Main {
         //Stage1_2Task4.extremeWords();
 
         //Задание 5
-
+        /*
         System.out.println("Введите предложение:");
         String[] splitList = scanner.nextLine().split(" ");
         Sentence sentence = new Sentence(splitList);
         System.out.println("Модель создана!");
+        */
 
 
     }
