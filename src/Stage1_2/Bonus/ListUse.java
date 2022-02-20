@@ -39,7 +39,7 @@ public class ListUse {
             if (a == 1) array.sort();
             System.out.println("Текщий вид списка: ");
             array.printArray();
-            System.out.println("Отчистить список или завершить работу?(1 - отчистить, 2 - не отчистить," +
+            System.out.println("Очистить список или завершить работу?(1 - очистить, 2 - не очистить," +
                     "другое число - завршить работу)");
             a = scanner.nextInt();
             if (a == 1) array.clear();
