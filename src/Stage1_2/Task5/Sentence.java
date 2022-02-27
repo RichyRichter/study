@@ -1,5 +1,7 @@
 package Stage1_2.Task5;
 
+import Stage1_3.Task4.Word;
+
 public class Sentence {
     private Word[] wordsMass;
     private int wordsCount;

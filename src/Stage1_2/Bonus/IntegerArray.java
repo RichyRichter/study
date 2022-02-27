@@ -1,9 +1,8 @@
 package Stage1_2.Bonus;
 
 public class IntegerArray {
-    private int size = 0;
     private int endPointer = 0;
-    private int[] array = new int[size];
+    private int[] array = new int[endPointer];
 
     public IntegerArray() {
     }
@@ -54,9 +53,8 @@ public class IntegerArray {
     }
 
     public void clear(){
-        this.size = 0;
         this.endPointer = 0;
-        this.array = new int[size];
+        this.array = new int[endPointer];
     }
 
     public boolean equals(int[] comparableArray) {

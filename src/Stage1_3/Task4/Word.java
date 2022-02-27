@@ -1,4 +1,4 @@
-package Stage1_2.Task5;
+package Stage1_3.Task4;
 
 public class Word {
     private char[] symblos;
