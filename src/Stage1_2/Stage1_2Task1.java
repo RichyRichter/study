@@ -3,7 +3,6 @@ package Stage1_2;
 import java.util.ArrayList;
 
 public class Stage1_2Task1 {
-
     public static ArrayList<Integer> getFibonacciArray(int size) {
         ArrayList<Integer> list = new ArrayList(size);
         if (size == 0) { return list;}

@@ -1,5 +1,7 @@
 package Stage1_3.Task4;
 
+import Stage1_2.Task5.Word;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
